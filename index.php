@@ -40,10 +40,9 @@ echo json_encode($usuarios);
 //echo $aluno;
 
 
-//
+//alterar um usuário
 
-
-$usuario = new Usuario();
+/*$usuario = new Usuario();
 
 $usuario->loadbyId(8);
 
@@ -51,4 +50,20 @@ $usuario->update("professor", "!@#!@#");
 
 
 echo $usuario;
+*/
+
+
+//Deletar um usuário
+$usuario = new Usuario();
+
+$usuario->loadbyId(8);
+
+$usuario->delete();
+
+echo $usuario;
+
+
+
+
+
 ?>
